@@ -18,12 +18,12 @@ const attrs = [
 
 function buildViewportCss (size) {
   return props => {
-    let css = ''
+    const css = []
     attrs.forEach(({ suffix, cssKey, transform = v => v }) => {
       const value = transform(props[`${size}${suffix}`])
-      if (typeof value !== 'undefined') css += cssDefs[cssKey][value]
+      if (typeof value !== 'undefined') css.push(cssDefs[cssKey](value))
     })
-    return css
+    return css.join('\n')
   }
 }
 

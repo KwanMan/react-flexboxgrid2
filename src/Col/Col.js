@@ -20,9 +20,6 @@ const propTypes = require('./propTypes')
 const attrs = [
   { suffix: '', cssKey: 'width', transform: v => v === true ? 'auto' : v },
   { suffix: 'Offset', cssKey: 'offset' },
-  { suffix: 'Justify', cssKey: 'justify' },
-  { suffix: 'Align', cssKey: 'align' },
-  { suffix: 'Space', cssKey: 'space' },
   { suffix: 'Order', cssKey: 'order' }
 ]
 

@@ -8,5 +8,16 @@
   },
   "keywords": [],
   "author": "Tommy Kwan",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {},
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "styled-components": "^2.1.2"
+  },
+  "devDependencies": {
+    "jetpack": "^0.3.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "standard": "^10.0.3"
+  }
 }

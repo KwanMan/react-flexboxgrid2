@@ -1,22 +1,21 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 
-const { Container, Row, Col } = require('../src')
+const Section = require('./Section')
+const responsive = require('./sections/responsive')
+const fluid = require('./sections/fluid')
+const simpleSyntax = require('./sections/simpleSyntax')
+const offsets = require('./sections/offsets')
+const autoWidth = require('./sections/autoWidth')
 
 const demoApp = (
-  <Container>
-    <Row>
-      <Col xs={3} xsOffset={1} md={5} mdOffset={0} lg>
-        <div style={{backgroundColor: 'black', color: 'white'}}>Responsive</div>
-      </Col>
-      <Col xs={3} xsOffset={1} md={5} mdOffset={1} lg={1} lgOffset={0}>
-        <div style={{backgroundColor: 'black', color: 'white'}}>Responsive</div>
-      </Col>
-      <Col xs={3} xsOffset={1} md={1} mdOffset={0} lg={1} lgOffset={0}>
-        <div style={{backgroundColor: 'black', color: 'white'}}>Responsive</div>
-      </Col>
-    </Row>
-  </Container>
+  <div>
+    <Section {...responsive} />
+    <Section {...fluid} />
+    <Section {...simpleSyntax} />
+    <Section {...offsets} />
+    <Section {...autoWidth} />
+  </div>
 )
 
 ReactDOM.render(demoApp, document.querySelector('#root'))

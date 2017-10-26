@@ -11,8 +11,8 @@ const cssDefs = require('./css')
 const propTypes = require('./propTypes')
 
 const attrs = [
-  { suffix: 'Justify', cssKey: 'justify' },
-  { suffix: 'Align', cssKey: 'align' },
+  { suffix: 'AlignX', cssKey: 'alignX' },
+  { suffix: 'AlignY', cssKey: 'alignY' },
   { suffix: 'Space', cssKey: 'space' }
 ]
 

@@ -1,6 +1,6 @@
-module.exports = { align, justify, space}
+module.exports = { alignY, alignX, space }
 
-function align (value) {
+function alignY (value) {
   return {
     top: `align-items: flex-start;`,
     middle: `align-items: center;`,
@@ -8,7 +8,7 @@ function align (value) {
   }[value]
 }
 
-function justify (value) {
+function alignX (value) {
   return {
     start: `
       justify-content: flex-start;
